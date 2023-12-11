@@ -1,0 +1,1160 @@
+/* Імпорт шрифтів Cocogoose та Lato для використання на сторінці */
+@import url("https://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.cdnfonts.com/css/Lato");
+
+/* Основні стилі для тіла сторінки */
+body {
+  box-sizing: border-box; /* Врахування рамки та внутрішніх відступів в розрахунках розміру блоку */
+  font-size: 18px; /* Розмір шрифту для тексту */
+  height: 100vh; /* Висота сторінки на весь екран */
+  line-height: 1.5; /* Висота лінії для кращого читання тексту */
+  margin: 0; /* Відсутність зовнішніх відступів */
+  max-width: 100vw; /* Максимальна ширина не більше ширини вьюпорта */
+  padding: 0; /* Відсутність внутрішніх відступів */
+  width: 100%; /* Ширина на весь вьюпорт */
+  overflow-x: hidden; /* Приховання горизонтального скролу */
+}
+
+/* Стилі для заголовка з навігацією */
+body header {
+  height: 99vh; /* Висота заголовка на 99% вьюпорта */
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/artbg3.jpeg"); /* Зображення фону */
+  background-repeat: no-repeat; /* Відмова від повторення фону */
+  background-size: cover; /* Розмір фону покриває весь блок */
+}
+
+/* Стилі для контейнера навігації */
+body header .nav-container {
+  display: flex; /* Відображення елементів контейнера як гнучкого блоку */
+  flex-direction: column; /* Орієнтація елементів контейнера у стовпчик */
+  position: fixed; /* Зафіксована позиція для контейнера навігації */
+  width: 100%; /* Ширина контейнера на весь вьюпорт */
+  height: 100%; /* Висота контейнера на весь вьюпорт */
+}
+
+/* Стилі для заголовка з текстовою інформацією та зображенням на фоні */
+.title h1 {
+  font-size: 11rem; /* Розмір шрифту для заголовка */
+  font-family: 'cocogoose', sans-serif; /* Використання шрифту Cocogoose для заголовка */
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/artbg.jpg"); /* Зображення фону заголовка */
+  color: white; /* Колір тексту */
+  background-size: cover; /* Розмір фону покриває весь блок */
+  background-clip: initial; /* Захоплення фону текстом */
+  -webkit-background-clip: text; /* Захоплення фону текстом для вебкіт-браузерів */
+  -webkit-text-fill-color: transparent; /* Колір тексту прозорий для вебкіт-браузерів */
+}
+
+/* Стилі для підкреслення заголовків розділів програми, презентацій та партнерів */
+body main .program-underline,
+body main .featured-underline,
+body main .partners-underline {
+  background-color: #ec5242; /* Колір підкреслення */
+  height: 2px; /* Товщина підкреслення */
+  margin: 0 auto; /* Вирівнювання по центру */
+  width: 20%; /* Ширина підкреслення */
+}
+/* Стилі для заголовка з назвою та зображенням на фоні */
+.title h1 {
+  font-size: 11rem; /* Розмір шрифту для назви */
+  font-family: 'cocogoose', sans-serif; /* Використання шрифту Cocogoose для назви */
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/artbg.jpg"); /* Зображення фону */
+  color: white; /* Колір тексту */
+  background-size: cover; /* Розмір фону покриває весь блок */
+  background-clip: initial; /* Захоплення фону текстом */
+  -webkit-background-clip: text; /* Захоплення фону текстом для вебкіт-браузерів */
+  -webkit-text-fill-color: transparent; /* Колір тексту прозорий для вебкіт-браузерів */
+}
+
+/* Стилі для зображення-піктограми елемента програми */
+.program-item-icon img {
+  width: 100px; /* Ширина зображення */
+  padding: 20px; /* Внутрішній відступ від меж зображення */
+}
+
+/* Стилі для заголовка з навігацією */
+body header {
+  height: 99vh; /* Висота заголовка на 99% вьюпорта */
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/artbg3.jpeg"); /* Зображення фону заголовка */
+  background-repeat: no-repeat; /* Відмова від повторення фону */
+  background-size: cover; /* Розмір фону покриває весь блок */
+}
+
+/* Стилі для контейнера навігації */
+body header .nav-container {
+  display: flex; /* Відображення елементів контейнера як гнучкого блоку */
+  flex-direction: column; /* Орієнтація елементів контейнера у стовпчик */
+  position: fixed; /* Зафіксована позиція для контейнера навігації */
+  width: 100%; /* Ширина контейнера на весь вьюпорт */
+  height: 100%; /* Висота контейнера на весь вьюпорт */
+}
+
+/* Стилі для соціальної навігації в контейнері навігації заголовка */
+body header .nav-container .social-nav {
+  display: flex; /* Відображення елементів як гнучкого блоку */
+  justify-content: flex-end; /* Вирівнювання в кінець контейнера */
+  height: 40px; /* Висота блоку соціальної навігації */
+  width: 100%; /* Ширина блоку на весь контейнер */
+  background-color: #272a31; /* Колір фону блоку */
+  padding-top: 15px; /* Внутрішній відступ зверху блоку */
+}
+
+/* Стилі для елементів, які слід приховувати */
+.hide {
+  display: block; /* Зміна стану відображення на блок */
+}
+
+/* Стилі для зображення в контейнері футера */
+body main footer .footer-container img {
+  width: 50%; /* Ширина зображення у відсотках від контейнера */
+  height: 5rem; /* Висота зображення */
+}
+
+/* Стилі для логотипу в навігаційному меню заголовка */
+body header .nav-container .navbar .logo-header img {
+  width: 100%; /* Ширина зображення логотипу на весь блок */
+  height: 60px; /* Висота логотипу */
+}
+
+/* Стилі для банера в заголовку */
+body header .banner {
+  margin: 0 auto; /* Зовнішній відступи блоку від країв */
+  padding-top: 113px; /* Внутрішній відступ зверху блоку */
+  padding-left: 1rem; /* Внутрішній відступ зліва блоку */
+  padding-right: 1rem; /* Внутрішній відступ справа блоку */
+  display: flex; /* Відображення елементів як гнучкого блоку */
+  flex-direction: column; /* Орієнтація елементів у стовпчик */
+  justify-content: center; /* Вирівнювання в центр */
+}
+
+/* Стилі для заголовка банера */
+body header .banner h1 {
+  font-size: 35px; /* Розмір шрифту */
+  font-family: "COCOGOOSE", sans-serif; /* Використання шрифту COCOGOOSE */
+  color: #ec5242; /* Колір тексту */
+  font-weight: 500; /* Товщина шрифту */
+  line-height: 60px; /* Висота лінії */
+}
+
+/* Стилі для підзаголовка банера */
+body header .banner h3 {
+  font-size: 40px; /* Розмір шрифту */
+  font-weight: 500; /* Товщина шрифту */
+  font-family: "Lato", sans-serif; /* Використання шрифту Lato */
+  line-height: 52px; /* Висота лінії */
+  color: #ec5242; /* Колір тексту */
+  margin-bottom: 0; /* Зниження зовнішнього відступу знизу */
+  margin-top: 0; /* Зниження зовнішнього відступу зверху */
+}
+
+/* Стилі для елементів соціальної навігації */
+body header .nav-container .social-nav ul li {
+  margin-left: 1rem; /* Зовнішній відступ зліва між елементами */
+  list-style: none; /* Відключення маркерів списку */
+}
+
+/* Стилі для посилань елементів соціальної навігації */
+body header .nav-container .social-nav ul li a {
+  color: #fff; /* Колір тексту посилань */
+  font-size: 0.8rem; /* Розмір шрифту */
+  text-decoration: none; /* Відключення підкреслення посилань */
+}
+
+/* Стилі для зміни кольору тексту при наведенні на посилання соціальної навігації */
+body header .nav-container .social-nav ul li a:hover {
+  color: #ec5242; /* Колір тексту при наведенні */
+}
+
+/* Стилі для контейнера навігації у хедері */
+body header .nav-container .navbar {
+  width: 100%; /* Ширина контейнера */
+  height: 80px; /* Висота контейнера */
+  background-color: #fff; /* Колір фону контейнера */
+  column-gap: 30px; /* Відстань між колонками (еквівалент margin-right для дочірніх елементів) */
+}
+
+/* Стилі для контейнера списку меню */
+body header .nav-container .navbar .menu-list {
+  position: fixed; /* Фіксована позиція */
+  transform: translateY(-100%); /* Зсув зверху за межі екрану */
+  transition: transform 0.2s, -webkit-transform 0.2s; /* Анімація зміни позиції */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99; /* Порядок накладання елементів */
+  background: #000000f5; /* Колір фону контейнера списку меню з прозорістю */
+
+  list-style: none; /* Відключення маркерів списку */
+  padding-top: 4rem; /* Зовнішній відступ зверху */
+  margin: 0; /* Відключення зовнішніх відступів */
+}
+
+/* Стилі для пунктів меню */
+body header .nav-container .navbar .menu-list .navbar-menu-item {
+  padding: 1rem 1rem 1rem 4rem; /* Внутрішні відступи пунктів меню */
+  font-size: 2rem; /* Розмір шрифту */
+  font-weight: bold; /* Товщина шрифту */
+  cursor: pointer; /* Зміна форми курсора при наведенні */
+}
+
+/* Загальні стилі для посилань у пунктах меню */
+body header .nav-container .navbar .menu-list .navbar-menu-item a {
+  color: #fff; /* Колір тексту */
+  text-decoration: none; /* Відключення підкреслення при наведенні */
+}
+
+/* Зміна кольору тексту посилань при наведенні */
+body header .nav-container .navbar .menu-list .navbar-menu-item a:hover {
+  color: #ec5242; /* Колір тексту при наведенні */
+}
+
+/* Стилі для контейнера навігації у хедері на десктопі */
+body header .nav-container .navbar .navbar-container {
+  display: none; /* Приховання контейнера */
+}
+
+/* Стилі для контейнера соціальної навігації у хедері */
+body header .nav-container .social-nav ul {
+  display: flex; /* Відображення в рядок */
+  justify-content: flex-end; /* Вирівнювання зправа */
+  align-items: center; /* Вирівнювання по вертикалі по центру */
+  padding-right: 4%; /* Зовнішній відступ справа */
+}
+
+/* Стилі для списку меню на десктопі */
+body header .nav-container .navbar .navbar-container .desk-navbar-menu .desk-navbar-menu-list {
+  list-style: none; /* Відключення маркерів списку */
+}
+
+/* Стилі для пунктів меню на десктопі */
+body header .nav-container .navbar .navbar-container .desk-navbar-menu .desk-navbar-menu-list .desk-navbar-menu-item {
+  list-style: none; /* Відключення маркерів списку */
+  display: flex; /* Відображення в рядок */
+}
+
+/* Стилі для посилань у пунктах меню на десктопі */
+body header .nav-container .navbar .navbar-container .desk-navbar-menu .desk-navbar-menu-list .desk-navbar-menu-item a {
+  color: rgb(0 0 0 / 40%); /* Колір тексту з прозорістю */
+  font-family: "COCOGOOSE", sans-serif; /* Шрифт тексту */
+  font-size: 0.8rem; /* Розмір шрифту */
+  text-decoration: none; /* Відключення підкреслення */
+  padding: 0.5rem 1rem; /* Внутрішні відступи */
+}
+
+/* Зміна фону і кольору тексту посилань при наведенні на десктопі */
+body header .nav-container .navbar .navbar-container .desk-navbar-menu .desk-navbar-menu-list .desk-navbar-menu-item a:hover {
+  background: #d3d3d3; /* Колір фону при наведенні */
+  color: #272a31; /* Колір тексту при наведенні */
+}
+
+/* Стилі для блоку мобільної навігації */
+body header .nav-container .navbar .mobile {
+  display: none; /* Приховання на десктопі */
+  position: fixed; /* Фіксоване положення */
+  z-index: 100; /* Значення z-index для навігації поверх інших елементів */
+  top: 1rem; /* Відстань від верхнього краю */
+  left: 0.3rem; /* Відстань від лівого краю */
+  padding: 4px; /* Зовнішні відступи */
+  cursor: pointer; /* Зміна курсору на пальцевий */
+}
+
+/* Стилі для іконки закриття мобільної навігації */
+body header .nav-container .navbar .mobile .close {
+  display: none; /* Приховання значка закриття */
+  color: #fff; /* Колір значка */
+  font-size: 1.5rem; /* Розмір значка */
+}
+
+/* Стилі для контейнера логотипу в хедері */
+body header .nav-container .navbar .logo-header {
+  display: flex; /* Відображення в рядок */
+}
+
+/* Стилі для посилань у блоці програми, які приховані на десктопі */
+body main .program-link {
+  display: none; /* Приховання посилань */
+}
+
+/* Стилі для опису банера в хедері */
+body header .banner-description {
+  border: 2px solid #fff; /* Обрамлення */
+  font-family: "Lato", sans-serif; /* Шрифт тексту */
+  padding: 1rem; /* Внутрішні відступи */
+  color: #272a31; /* Колір тексту */
+  font-style: normal; /* Стиль шрифту */
+  font-weight: 700; /* Товщина шрифту */
+}
+
+/* Стилі для блоку програми у хедері */
+body header .banner-program {
+  font-size: 1.3rem; /* Розмір шрифту */
+  color: #272a31; /* Колір тексту */
+  font-weight: bold; /* Товщина шрифту */
+  font-family: "COCOGOOSE", sans-serif; /* Шрифт тексту */
+  margin-bottom: 0; /* Зовнішній відступ знизу */
+}
+
+/* Стилі для блоку з місцем та описом у хедері */
+body header .banner-location {
+  font-size: 1rem; /* Розмір шрифту */
+  font-family: "COCOGOOSE", sans-serif; /* Шрифт тексту */
+  color: #272a31; /* Колір тексту */
+  font-weight: bold; /* Товщина шрифту */
+  margin-top: 5px; /* Зовнішній відступ зверху */
+}
+
+/* Стилі для блоку з описом */
+.descruption {
+  background-color: white; /* Колір фону */
+  padding: 20px; /* Внутрішні відступи */
+  border: 2px solid #e7e7e7; /* Рамка */
+  border-radius: 10px; /* Радіус закруглення кутів */
+}
+
+/* Стилі для абзаців у блоку опису */
+.descruption p {
+  color: black; /* Колір тексту */
+  font-size: 17px; /* Розмір шрифту */
+}
+
+/* Стилі для блоку програми в основній частині */
+body main .program {
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/blackbggg.jpg"); /* Зображення фону */
+  color: #d9c6c6; /* Колір тексту */
+  background-size: cover; /* Масштабування фону по ширині та висоті */
+}
+
+/* Стилі для контейнера програми в основній частині */
+body main .program-container {
+  flex-direction: column; /* Орієнтація контейнера по колонках */
+  margin: 25px 8px; /* Зовнішні відступи */
+  row-gap: 15px; /* Внутрішній відступ між рядками */
+}
+
+/* Стилі для елементів програми в основній частині */
+body main .program-container .program-item {
+  flex-direction: row; /* Орієнтація елемента по рядках */
+  column-gap: 20px; /* Внутрішній відступ між колонками */
+  padding: 0 10px; /* Зовнішні відступи по горизонталі */
+  background-color: rgb(245 245 245 / 20%); /* Колір фону з прозорістю */
+  opacity: 1; /* Прозорість */
+  color: #fff; /* Колір тексту */
+  font-family: "COCOGOOSE", sans-serif; /* Шрифт тексту */
+}
+
+/* Стилі для заголовка елемента програми */
+body main .program-container .program-item h3 {
+  color: #ec5242; /* Колір тексту заголовка */
+  font-size: 18px; /* Розмір шрифту заголовка */
+}
+
+/* Стилі для контейнера футера в основній частині */
+body main footer .footer-container p {
+  font-family: "Lato", sans-serif; /* Шрифт тексту */
+  color: #272a31; /* Колір тексту */
+  font-weight: bold; /* Товщина шрифту */
+  font-size: 1rem; /* Розмір шрифту */
+  padding: 0; /* Зовнішні відступи */
+  margin: 0; /* Внутрішні відступи */
+  width: 50%; /* Ширина тексту */
+  height: auto; /* Автоматична висота */
+}
+
+/* Стилі для абзаців елементів програми */
+body main .program-container .program-item p {
+  font-weight: 300; /* Товщина шрифту */
+  font-family: "Lato", sans-serif; /* Шрифт тексту */
+  color: #fff; /* Колір тексту */
+}
+
+/* Стилі для кнопок програм у внутрішньому контейнері основного блоку (main) */
+body main .program-container .program-btn {
+  padding: 10px 20px;  /* встановлення відступів для кнопок */
+  background-color: #ec5242;  /* колір фону кнопок */
+  color: #fff;  /* колір тексту на кнопках */
+  font-weight: bold;  /* насиченість шрифту тексту на кнопках */
+  border: 0;  /* відсутність межі на кнопках */
+  font-size: 1rem;  /* розмір шрифту на кнопках */
+  position: relative;  /* позиціонування кнопок відносно інших елементів */
+}
+
+/* Зміни стилів при наведенні на кнопку програми */
+body main .program-container .program-btn:hover {
+  background-color: #d3d3d3;  /* новий колір фону при наведенні на кнопку */
+  color: #272a31;  /* новий колір тексту при наведенні на кнопку */
+  cursor: pointer;  /* зміна курсора при наведенні на кнопку */
+}
+
+/* Стилі для зображень у вітринах внутрішнього контейнера основного блоку */
+body main .featured-container .featured-item .featured-img img {
+  width: 100%;  /* розмір зображення по ширині контейнера */
+  height: 100%;  /* розмір зображення по висоті контейнера */
+}
+
+/* Стилі для текстового опису вітрини внутрішнього контейнера основного блоку */
+body main .featured-container .featured-item .featured-description {
+  width: auto;  /* автоматична ширина текстового блоку */
+}
+
+/* Стилі для абзаців у текстовому описі вітрини внутрішнього контейнера основного блоку */
+body main .featured-container .featured-item .featured-description p {
+  font-family: "Lato", sans-serif;  /* встановлення шрифту тексту */
+  color: #272a31;  /* колір тексту */
+  font-weight: bold;  /* насиченість шрифту тексту */
+  padding: 0 10px;  /* відступи в середині блоку */
+  margin: 5px 10px;  /* зовнішні відступи блоку */
+}
+
+/* Стилі для заголовка в текстовому описі вітрини */
+body main .featured-container .featured-item .featured-description .description-title {
+  font-family: "Lato", sans-serif;  /* встановлення шрифту для заголовка */
+  color: #272a31;  /* колір тексту заголовка */
+  font-weight: bold;  /* насиченість шрифту заголовка */
+  font-size: 1.3rem;  /* розмір шрифту заголовка */
+}
+
+/* Стилі для підзаголовка в текстовому описі вітрини */
+body main .featured-container .featured-item .featured-description .subdescription {
+  font-family: "Lato", sans-serif;  /* встановлення шрифту для підзаголовка */
+  font-style: italic;  /* курсив для підзаголовка */
+  color: #ec5242;  /* колір тексту підзаголовка */
+  font-size: 0.8rem;  /* розмір шрифту підзаголовка */
+}
+
+/* Стилі для тіла текстового опису вітрини */
+body main .featured-container .featured-item .featured-description .description-body {
+  font-family: "Lato", sans-serif;  /* встановлення шрифту для тіла опису */
+  color: #272a31;  /* колір тексту тіла опису */
+  font-weight: bold;  /* насиченість шрифту тіла опису */
+  font-size: 0.8rem;  /* розмір шрифту тіла опису */
+}
+
+/* Стилі для роздільника у текстовому описі вітрини */
+body main .featured-container .featured-item .featured-description .featured-separator {
+  border: 2px solid #d3d3d3;  /* стиль границі роздільника */
+  width: 5%;  /* ширина роздільника */
+  margin-left: 22px;  /* відступ ліворуч від роздільника */
+}
+
+/* Стилі для кнопки "Докладніше" */
+body main .featured-container .btn-more {
+  padding: 10px 20px;  /* встановлення відступів для кнопки */
+  background-color: #fff;  /* колір фону кнопки */
+  border: 2px solid #d3d3d3;  /* стиль границі кнопки */
+  color: #272a31;  /* колір тексту на кнопці */
+  font-weight: bold;  /* насиченість шрифту на кнопці */
+  width: 50%;  /* ширина кнопки */
+  column-gap: 10px;  /* відстань між колонками в кнопці */
+  font-size: 1rem;  /* розмір шрифту на кнопці */
+  position: relative;  /* позиціонування кнопки відносно інших елементів */
+}
+
+/* Стилі для кнопки "Докладніше" при наведенні */
+body main .featured-container .btn-more:hover {
+  background-color: #ec5242;  /* новий колір фону при наведенні на кнопку */
+  color: #fff;  /* новий колір тексту при наведенні на кнопку */
+  cursor: pointer;  /* зміна курсора при наведенні на кнопку */
+  border: 2px solid #ec5242;  /* новий стиль границі при наведенні на кнопку */
+}
+
+/* Стилі для іконки стрілки вниз на кнопці "Докладніше" */
+body main .featured-container .btn-more .chevron {
+  padding: 0;  /* відсутність внутрішнього відступу для іконки */
+  margin: 0;  /* відсутність зовнішнього відступу для іконки */
+  font-size: 1.5rem;  /* розмір шрифту для іконки */
+  color: #ec5242;  /* колір іконки */
+}
+
+/* Зміни стилів для іконки стрілки вниз при наведенні на кнопку "Докладніше" */
+body main .featured-container .btn-more .chevron:hover {
+  color: #fff;  /* новий колір іконки при наведенні на кнопку */
+  cursor: pointer;  /* зміна курсора при наведенні на кнопку */
+}
+
+/* Зміни стилів для іконки стрілки вгору при наведенні на кнопку "Докладніше" */
+body main .featured-container .btn-more:hover .chevron {
+  transform: rotate(180deg);  /* поворот іконки на 180 градусів при наведенні на кнопку */
+  color: #fff;  /* новий колір іконки при наведенні на кнопку */
+}
+
+/* Стилі для блоку заголовка (header) */
+.header {
+  background-color: black;  /* колір фону заголовка */
+}
+
+/* Стилі для тексту заголовка (h4) у блоку заголовка */
+.title h4 {
+  font-size: 38px;  /* розмір шрифту заголовка */
+  margin: 0;  /* відсутність зовнішнього відступу заголовка */
+  padding: 0;  /* відсутність внутрішнього відступу заголовка */
+  font-family: "lato", sans-serif;  /* встановлення шрифту для заголовка */
+  color: #ec5242;  /* колір тексту заголовка */
+}
+
+/* Стилі для блоку програм (programs-class) */
+.programs-class {
+  background-image: url("https://gloireirenge.github.io/Art-exhibition-project/img/blackbggg.jpg");  /* фонове зображення */
+  padding: 3rem 10px;  /* відступи всередині блоку */
+}
+
+/* Стилі для секції зображення (img-section) */
+.img-section {
+  padding-top: 20px;  /* відступ зверху для секції зображення */
+  width: 30px;  /* ширина секції зображення */
+}
+
+/* Стилі для секції рангування (ranking-section) */
+.ranking-section {
+  background-color: rgba(236, 236, 236);  /* колір фону секції рангування */
+}
+
+/* Зміни стилів для блоку "featured" */
+body main .featured {
+  flex-direction: column;  /* зміна напрямку розташування елементів на колонку */
+}
+
+/* Стилі для елементу "showMore" у блоку "featured" */
+body main .featured .showMore {
+  display: none;  /* приховання елементу "showMore" */
+}
+
+/* Стилі для елементу "showMoreb" у блоку "featured" */
+body main .featured .showMoreb {
+  display: flex;  /* відображення елементу "showMoreb" */
+}
+
+/* Зміни стилів для контейнера "featured-container" */
+body main .featured-container {
+  flex-direction: column;  /* зміна напрямку розташування елементів на колонку */
+  margin: 25px 8px;  /* зовнішні відступи контейнера */
+  row-gap: 15px;  /* відстань між рядками елементів контейнера */
+}
+
+/* Стилі для блоку "featured-img" у елементі "featured-item" у контейнері "featured-container" */
+body main .featured-container .featured-item .featured-img {
+  width: 40%;  /* ширина блоку "featured-img" */
+}
+
+/* Зміни стилів для блоку "partners" */
+body main .partners {
+  flex-direction: column;  /* зміна напрямку розташування елементів на колонку */
+  background-color: rgb(39 42 49 / 90%);  /* колір фону блоку "partners" */
+  width: 100%;  /* ширина блоку "partners" */
+  height: 15rem;  /* висота блоку "partners" */
+}
+
+/* Стилі для заголовка h2 у блоку "partners" */
+body main .partners h2 {
+  color: #767171;  /* колір тексту заголовка h2 */
+  font-family: "Lato", sans-serif;  /* встановлення шрифту для заголовка h2 */
+  font-weight: bold;  /* насиченість шрифту заголовка h2 */
+  font-size: 2rem;  /* розмір шрифту заголовка h2 */
+  margin: 20px;  /* зовнішні відступи заголовка h2 */
+  padding: 0;  /* відсутність внутрішніх відступів заголовка h2 */
+}
+
+/* Стилі для центрування елементів по горизонталі (justify-content-center) */
+.justify-content-center {
+  justify-content: center!important;  /* центрування контенту */
+}
+
+/* Стилі для елемента row */
+.row {
+  --bs-gutter-x: 1.5rem;  /* задання значення горизонтального відступу між колонками */
+  --bs-gutter-y: 0;  /* задання значення вертикального відступу між рядками */
+  flex-wrap: wrap;  /* дозвіл на згортання елементів на різних екранах */
+  margin-top: calc(-1 * var(--bs-gutter-y));  /* вирахування вертикального відступу для усунення відступів зверху */
+  margin-right: calc(-.5 * var(--bs-gutter-x));  /* вирахування горизонтального відступу для усунення відступів справа */
+  margin-left: calc(-.5 * var(--bs-gutter-x));  /* вирахування горизонтального відступу для усунення відступів зліва */
+  margin-left: 100px;  /* встановлення лівого відступу ряду */
+}
+
+/* Стилі для універсального блоку */
+*, ::after, ::before {
+  box-sizing: border-box;  /* встановлення box-sizing для універсального блоку */
+}
+
+/* Стилі для body */
+body {
+  margin: 0;  /* відсутність зовнішніх відступів */
+  font-family: var(--bs-body-font-family);  /* встановлення шрифту для body */
+  font-size: var(--bs-body-font-size);  /* встановлення розміру шрифту для body */
+  font-weight: var(--bs-body-font-weight);  /* встановлення насиченості шрифту для body */
+  line-height: var(--bs-body-line-height);  /* встановлення висоти рядка для body */
+  color: var(--bs-body-color);  /* встановлення кольору тексту для body */
+  text-align: var(--bs-body-text-align);  /* встановлення вирівнювання тексту для body */
+  background-color: var(--bs-body-bg);  /* встановлення фонового кольору для body */
+  -webkit-text-size-adjust: 100%;  /* відключення автоматичного збільшення розміру шрифту для iOS */
+  -webkit-tap-highlight-color: transparent;  /* встановлення кольору підсвічування при торканні для iOS */
+}
+
+/* Зміни стилів для блоку "social-nav" у заголовку (header) на екранах шириною більше 0px */
+@media screen and (min-width: 0) {
+  body header .nav-container .social-nav {
+    display: none;  /* приховання блоку "social-nav" */
+  }
+}
+
+/* Зміни стилів для блоку "social-nav" у заголовку (header) на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body header .nav-container .social-nav {
+    display: flex;  /* відображення блоку "social-nav" */
+  }
+
+  /* Зміни стилів для екранів шириною більше або рівно 992px */
+  @media screen and (min-width: 992px) {
+    body header .nav-container .social-nav ul {
+      padding-right: 16%;  /* відстань зправа для екранів шириною більше або рівно 992px */
+    }
+  }
+
+  /* Зміни стилів для екранів шириною більше або рівно 1200px */
+  @media screen and (min-width: 1200px) {
+    body header .nav-container .social-nav ul {
+      padding-right: 23.5%;  /* відстань зправа для екранів шириною більше або рівно 1200px */
+    }
+  }
+
+  /* Зміни стилів для екранів шириною більше або рівно 1440px */
+  @media screen and (min-width: 1440px) {
+    body header .nav-container .social-nav ul {
+      padding-right: 26%;  /* відстань зправа для екранів шириною більше або рівно 1440px */
+    }
+  }
+
+  /* Зміни стилів для екранів шириною більше або рівно 2560px */
+  @media screen and (min-width: 2560px) {
+    body header .nav-container .social-nav ul {
+      padding-right: 35%;  /* відстань зправа для екранів шириною більше або рівно 2560px */
+    }
+  }
+
+  /* Зміни стилів для блоку "navbar-container" у блоку "navbar" у блоку "nav-container" у заголовку (header) на екранах шириною більше або рівно 768px */
+  body header .nav-container .navbar .navbar-container {
+    display: inline-block;  /* відображення блоку "navbar-container" */
+  }
+
+  /* Зміни стилів для блоку "desk-navbar-menu-list" у блоку "desk-navbar-menu" у блоку "navbar-container" у блоку "navbar" у блоку "nav-container" у заголовку (header) на екранах шириною більше або рівно 768px */
+  body header .nav-container .navbar .navbar-container .desk-navbar-menu .desk-navbar-menu-list {
+    list-style: none;  /* відключення стилів списку */
+    display: flex;  /* відображення блоку "desk-navbar-menu-list" у вигляді гнучкого контейнера */
+    margin-left: 1rem;  /* відстань зліва */
+    margin-right: 0.5rem;  /* відстань справа */
+  }
+}
+
+/* Зміни стилів для блоку "mobile" у блоку "navbar" у блоку "nav-container" у заголовку (header) на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body header .nav-container .navbar .mobile {
+    display: flex;  /* відображення блоку "mobile" */
+  }
+
+  /* Зміни стилів для блоку "showMenu" у блоку "navbar" у блоку "nav-container" у заголовку (header) */
+  body header .nav-container .navbar .showMenu {
+    transform: translateY(0);  /* скидання значення трансформації translateY для блоку "showMenu" */
+  }
+
+  /* Зміни стилів для блоку "navbar" у блоку "nav-container" у заголовку (header) */
+  body header .nav-container .navbar {
+    justify-content: flex-start;  /* вирівнювання початку контенту в блоку "navbar" */
+  }
+
+  /* Зміни стилів для блоку "menu-list" у блоку "navbar" у блоку "nav-container" у заголовку (header) на екранах шириною більше або рівно 768px */
+  @media screen and (min-width: 768px) {
+    body header .nav-container .navbar .menu-list {
+      list-style: none;  /* відключення стилів списку */
+      display: flex;  /* відображення блоку "menu-list" у вигляді гнучкого контейнера */
+      margin-left: 1rem;  /* відстань зліва */
+      margin-right: 0.5rem;  /* відстань справа */
+    }
+  }
+
+  /* Зміни стилів для блоку "menu-list" у блоку "navbar" у блоку "nav-container" у заголовку (header) на екранах шириною більше або рівно 1200px */
+  @media screen and (min-width: 1200px) {
+    body header .nav-container .navbar .menu-list {
+      margin-left: 4rem;  /* відстань зліва */
+      margin-right: 2rem;  /* відстань справа */
+    }
+  }
+
+  /* Зміни стилів для посилань у блоку "campaign" у блоку "navbar" у блоку "nav-container" у заголовку (header) */
+  body header .nav-container .navbar .campaign a {
+    color: #ec5242;  /* колір тексту посилання */
+    font-family: "COCOGOOSE", sans-serif;  /* встановлення шрифту для посилання */
+    font-size: 0.8rem;  /* розмір шрифту для посилання */
+    text-decoration: none;  /* відключення декорації тексту посилання */
+  }
+
+  /* Зміни стилів для тексту посилань у блоку "menu-list" у блоку "navbar" у блоку "nav-container" у заголовку (header) */
+  body header .nav-container .navbar .menu-list li a {
+    color: rgb(0 0 0 / 40%);  /* колір тексту посилань у списку */
+    font-family: "COCOGOOSE", sans-serif;  /* встановлення шрифту для тексту посилань у списку */
+    font-size: 0.8rem;  /* розмір шрифту для тексту посилань у списку */
+    text-decoration: none;  /* відключення декорації тексту посилань у списку */
+    padding: 0.5rem 1rem;  /* відстань від тексту до рамки для кожного посилання у списку */
+  }
+}
+
+/* Зміни стилів для посилань у блоку "campaign" при наведенні курсору */
+body header .nav-container .navbar .campaign:hover a {
+  color: #fff;  /* колір тексту посилань при наведенні курсору */
+}
+
+/* Зміни стилів для тексту посилань у списку "menu-list" при наведенні курсору */
+body header .nav-container .navbar .menu-list li a:hover {
+  background: #d3d3d3;  /* колір фону тексту посилань у списку при наведенні курсору */
+  color: #272a31;  /* колір тексту посилань у списку при наведенні курсору */
+}
+
+/* Стилі для блоку "campaign" */
+body header .nav-container .navbar .campaign {
+  padding: 0.5rem 1rem;  /* відстань від тексту до рамки для блоку "campaign" */
+  border: 1px solid #ec5242;  /* стиль рамки блоку "campaign" */
+}
+
+/* Зміни стилів для блоку "campaign" при наведенні курсору */
+body header .nav-container .navbar .campaign:hover {
+  background: #ec5242;  /* колір фону блоку "campaign" при наведенні курсору */
+}
+
+/* Зміни стилів для блоку "campaign" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+@media screen and (min-width: 0) and (min-width: 0),
+       screen and (min-width: 0) and (min-width: 768px) {
+  body header .nav-container .navbar .campaign {
+    display: none;  /* приховання блоку "campaign" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+  }
+}
+
+/* Зміни стилів для блоку "campaign" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+@media screen and (min-width: 0) and (min-width: 768px) {
+  body header .nav-container .navbar .campaign {
+    display: flex;  /* відображення блоку "campaign" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+  }
+
+  /* Зміни стилів для блоку "navbar" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+  body header .nav-container .navbar {
+    justify-content: center;  /* вирівнювання по центру контенту в блоку "navbar" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+  }
+}
+
+/* Зміни стилів для блоку "menuIcon" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body header .nav-container .navbar .menuIcon {
+    color: #272a31;  /* колір тексту для блоку "menuIcon" */
+    font-size: 2rem;  /* розмір шрифту для блоку "menuIcon" */
+  }
+
+  /* Зміни стилів для блоку "menuIcon" при наведенні курсору */
+  body header .nav-container .navbar .menuIcon:hover {
+    color: #272a31;  /* колір тексту для блоку "menuIcon" при наведенні курсору */
+    cursor: pointer;  /* зміна вигляду курсору при наведенні на блок "menuIcon" */
+  }
+}
+
+/* Зміни стилів для блоку "menuIcon" на екранах шириною більше або рівно 0px та більше або рівно 768px */
+@media screen and (min-width: 0) and (min-width: 768px) {
+  body header .nav-container .navbar .menuIcon {
+    display: none;  /* приховання блоку "menuIcon" на екранах шириною більше або рівно 768px */
+  }
+}
+
+/* Зміни стилів для блоку "logo-header" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body header .nav-container .navbar .logo-header {
+    display: none;  /* приховання блоку "logo-header" */
+  }
+}
+
+/* Зміни стилів для блоку "logo-header" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body header .nav-container .navbar .logo-header {
+    display: flex;  /* відображення блоку "logo-header" */
+  }
+}
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body header .banner h1 {
+    font-size: 1.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+    font-size: 29px;  /* додатковий розмір шрифту для заголовку h1 у блоку "banner" */
+    font-family: "COCOGOOSE", sans-serif;  /* встановлення шрифту для заголовку h1 у блоку "banner" */
+    width: 92%;  /* ширина блоку "banner" для заголовку h1 */
+  }
+
+  body header .banner h3 {
+    font-size: 35px;  /* розмір шрифту для заголовку h3 у блоку "banner" */
+    font-weight: 500;  /* товщина шрифту для заголовку h3 у блоку "banner" */
+    font-family: "Lato", sans-serif;  /* встановлення шрифту для заголовку h3 у блоку "banner" */
+    line-height: 52px;  /* висота рядка для заголовку h3 у блоку "banner" */
+  }
+}
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body header .banner {
+    width: 70%;  /* ширина блоку "banner" на екранах шириною більше або рівно 768px */
+    margin: 0 auto;  /* вирівнювання блоку "banner" по центру */
+    padding-top: 140px;  /* відстань зверху для блоку "banner" */
+  }
+
+  body header .banner h1 {
+    font-size: 2.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+  body header .banner h3 {
+    font-size: 40px;  /* розмір шрифту для заголовку h3 у блоку "banner" */
+  }
+}
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body header .banner {
+    width: 70%;  /* ширина блоку "banner" на екранах шириною більше або рівно 992px */
+    margin: 0 auto;  /* вирівнювання блоку "banner" по центру */
+  }
+
+  body header .banner h1 {
+    font-size: 3.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+  body header .banner h3 {
+    font-size: 42px;  /* розмір шрифту для заголовку h3 у блоку "banner" */
+  }
+}
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 1200px */
+@media screen and (min-width: 1200px) {
+  body header .banner {
+    width: 70%;  /* ширина блоку "banner" на екранах шириною більше або рівно 1200px */
+    margin: 0 auto;  /* вирівнювання блоку "banner" по центру */
+  }
+
+  body header .banner h1 {
+    font-size: 2.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+}
+
+  body header .banner h3 {
+    font-size: 3rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+  body header .banner .banner-description {
+    width: 40%;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 1440px */
+@media screen and (min-width: 1440px) {
+  body header .banner {
+    width: 65%;  /* ширина блоку "banner" на екранах шириною більше або рівно 1440px */
+    margin: 0 auto;  /* вирівнювання блоку "banner" по центру */
+  }
+
+  body header .banner h1 {
+    font-size: 3.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+  body header .banner h3 {
+    font-size: 4rem;  /* розмір шрифту для заголовку h3 у блоку "banner" */
+  }
+}
+
+/* Зміни стилів для блоку "banner" на екранах шириною більше або рівно 2560px */
+@media screen and (min-width: 2560px) {
+  body header .banner {
+    width: 70%;  /* ширина блоку "banner" на екранах шириною більше або рівно 2560px */
+    padding-top: 120px;  /* відстань зверху для блоку "banner" */
+    margin: 0 auto;  /* вирівнювання блоку "banner" по центру */
+  }
+
+  body header .banner h1 {
+    font-size: 3.5rem;  /* розмір шрифту для заголовку h1 у блоку "banner" */
+  }
+
+  body header .banner h3 {
+    font-size: 1.5rem;  /* розмір шрифту для заголовку h3 у блоку "banner" */
+  }
+
+  body header .banner .banner-description {
+    width: 40%;  /* ширина блоку "banner-description" у блоку "banner" */
+  }
+}
+
+/* Зміни стилів для блоку "program-item" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .program-container .program-item {
+    width: 9rem;  /* ширина блоку "program-item" на екранах шириною більше або рівно 992px */
+    flex-direction: column;  /* зміна напрямку флекс-контейнера на вертикальний */
+    column-gap: 10px;  /* відстань між блоками "program-item" у контейнері */
+  }
+}
+
+/* Зміни стилів для блоку "program-item" на екранах шириною більше або рівно 1440px */
+@media screen and (min-width: 1440px) {
+  body main .program-container .program-item {
+    width: 12rem;  /* ширина блоку "program-item" на екранах шириною більше або рівно 1440px */
+  }
+}
+
+/* Зміни стилів для вкладеного блоку "program-btn" в блоку "program-btn" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body main .program-container .program-btn .program-btn {
+    display: block;  /* відображення блоку "program-btn" на екранах шириною більше або рівно 0px */
+  }
+}
+
+/* Зміни стилів для блоку "program-container" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .program-container {
+    display: flex;  /* зміна властивості відображення на "flex" для блоку "program-container" */
+    flex-flow: row;  /* зміна напрямку флекс-контейнера на горизонтальний */
+    justify-content: center;  /* вирівнювання по центру вздовж головної осі */
+    column-gap: 35px;  /* відстань між блоками "program-container" у контейнері */
+  }
+
+  body main .program-container .program-btn {
+    display: none;  /* приховання блоку "program-btn" на екранах шириною більше або рівно 992px */
+  }
+}
+
+/* Зміни стилів для блоку "program" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body main .program {
+    flex-direction: column;  /* зміна напрямку флекс-контейнера на вертикальний */
+  }
+}
+
+/* Зміни стилів для блоку "program-link" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .program-link {
+    display: block;  /* відображення блоку "program-link" */
+    color: #d3d3d3;  /* колір тексту для блоку "program-link" */
+    font-weight: bold;  /* товщина шрифту для блоку "program-link" */
+    font-size: 1.2rem;  /* розмір шрифту для блоку "program-link" */
+    padding: 2rem 1rem;  /* відстань від тексту до границь блоку "program-link" */
+  }
+
+  body main .program-link:hover {
+    color: #ec5242;  /* колір тексту для блоку "program-link" при наведенні курсору */
+    cursor: pointer;  /* зміна вигляду курсору при наведенні на блок "program-link" */
+  }
+}
+
+/* Зміни стилів для блоку "featured-container" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .featured-container {
+    margin: 10px 8%;  /* зовнішні відступи для блоку "featured-container" */
+  }
+}
+
+/* Зміни стилів для блоку "btn-more" в "featured-container" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body main .featured-container .btn-more {
+    width: 30%;  /* ширина блоку "btn-more" */
+  }
+}
+
+/* Зміни стилів для блоку "btn-more" в "featured-container" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .featured-container .btn-more {
+    display: none;  /* приховання блоку "btn-more" на екранах шириною більше або рівно 992px */
+  }
+}
+
+/* Зміни стилів для блоків "featured-container" та "featured-item" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .featured-container {
+    flex-flow: row wrap;  /* зміна напрямку флекс-контейнера на горизонтальний з обтинанням рядків */
+  }
+
+  body main .featured-container .featured-item {
+    width: 50%;  /* ширина блоку "featured-item" у половині контейнера "featured-container" */
+  }
+}
+
+/* Зміни стилів для заголовку "h2" в блоку "partners" на екранах шириною більше або рівно 2560px */
+@media screen and (min-width: 2560px) {
+  body main .partners h2 {
+    font-size: 3rem;  /* розмір шрифту для заголовку "h2" у блоку "partners" */
+  }
+}
+
+/* Зміни стилів для блоку "partners-underline" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body main .partners-underline {
+    width: 10%;  /* ширина блоку "partners-underline" */
+  }
+}
+
+/* Зміни стилів для блоку "partners-underline" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .partners-underline {
+    width: 7%;  /* ширина блоку "partners-underline" */
+  }
+}
+
+/* Зміни стилів для блоку "partners-underline" на екранах шириною більше або рівно 1200px */
+@media screen and (min-width: 1200px) {
+  body main .partners-underline {
+    width: 6%;  /* ширина блоку "partners-underline" */
+  }
+}
+
+/* Зміни стилів для блоку "partners-underline" на екранах шириною більше або рівно 2560px */
+@media screen and (min-width: 2560px) {
+  body main .partners-underline {
+    width: 3%;  /* ширина блоку "partners-underline" */
+  }
+}
+
+/* Стилі для блоку "partners-logo" на всіх екранах */
+body main .partners-logo {
+  flex-direction: row;  /* зміна напрямку флекс-контейнера на горизонтальний */
+  flex-wrap: wrap;  /* дозвіл на обтинання рядків */
+  width: 80%;  /* ширина блоку "partners-logo" */
+  column-gap: 10px;  /* відстань між блоками "partners-logo" у контейнері */
+  margin: 25px 8px;  /* зовнішні відступи для блоку "partners-logo" */
+  row-gap: 20px;  /* відстань між рядками блоків "partners-logo" у контейнері */
+}
+
+/* Зміни стилів для блоку "partners-logo" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body main .partners-logo {
+    margin: 50px 16px;  /* зовнішні відступи для блоку "partners-logo" */
+    column-gap: 30px;  /* відстань між блоками "partners-logo" у контейнері */
+  }
+
+  .hide {
+    display: none;  /* приховання елементів з класом "hide" */
+  }
+}
+
+/* Зміни стилів для блоку "partners-logo" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main .partners-logo {
+    margin: 50px 16px;  /* зовнішні відступи для блоку "partners-logo" */
+    column-gap: 30px;  /* відстань між блоками "partners-logo" у контейнері */
+  }
+}
+
+/* Зміни стилів для блоку "partners-logo" на екранах шириною більше або рівно 1200px */
+@media screen and (min-width: 1200px) {
+  body main .partners-logo {
+    margin: 50px 32px;  /* зовнішні відступи для блоку "partners-logo" */
+    column-gap: 30px;  /* відстань між блоками "partners-logo" у контейнері */
+  }
+}
+
+/* Зміни стилів для блоку "partners-logo" на екранах шириною більше або рівно 2560px */
+@media screen and (min-width: 2560px) {
+  body main .partners-logo {
+    margin: 42px 32px;  /* зовнішні відступи для блоку "partners-logo" */
+    column-gap: 30px;  /* відстань між блоками "partners-logo" у контейнері */
+  }
+}
+
+/* Зміни стилів для зображень у блоку "partners-logo" на екранах шириною більше або рівно 0px */
+@media screen and (min-width: 0) {
+  body main .partners-logo img {
+    width: 30%;  /* ширина зображень */
+    height: 30px;  /* висота зображень */
+  }
+
+  .hide {
+    display: none;  /* приховання елементів з класом "hide" */
+  }
+}
+
+/* Зміни стилів для зображень у блоку "partners-logo" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  body main .partners-logo img {
+    width: 20%;  /* ширина зображень */
+    height: 30px;  /* висота зображень */
+  }
+
+  .hide {
+    display: none;  /* приховання елементів з класом "hide" */
+  }
+}
+
+/* Зміни стилів для зображень у блоку "partners-logo" на екранах шириною більше або рівно 1200px */
+@media screen and (min-width: 1200px) {
+  body main .partners-logo img {
+    width: 15%;  /* ширина зображень */
+    height: 30px;  /* висота зображень */
+  }
+}
+
+/* Зміни стилів для зображень у блоку "partners-logo" на екранах шириною більше або рівно 2560px */
+@media screen and (min-width: 2560px) {
+  body main .partners-logo img {
+    width: 10%;  /* ширина зображень */
+    height: 50px;  /* висота зображень */
+  }
+}
+
+/* Стилі для блоку "footer" на всіх екранах */
+body main footer {
+  flex-direction: row;  /* зміна напрямку флекс-контейнера на горизонтальний */
+  width: 100%;  /* ширина блоку "footer" */
+}
+
+/* Стилі для блоку "footer .footer-container" на всіх екранах */
+body main footer .footer-container {
+  width: 90%;  /* ширина блоку "footer .footer-container" */
+  display: flex;  /* встановлення властивостей дисплея на флекс-контейнер */
+  flex-direction: row;  /* напрямок головної вісі флекс-контейнера */
+  justify-content: space-between;  /* рівномірний розподіл простору між елементами */
+  column-gap: 10px;  /* відстань між стовпцями */
+  margin-top: 30px;  /* зовнішній відступ зверху */
+  margin-bottom: 30px;  /* зовнішній відступ знизу */
+}
+
+/* Зміни стилів для блоку "footer .footer-container" на екранах шириною більше або рівно 768px */
+@media screen and (min-width: 768px) {
+  .hide {
+    display: block;  /* відображення елементів з класом "hide" */
+  }
+
+  body main footer .footer-container {
+    width: 80%;  /* ширина блоку "footer .footer-container" */
+    column-gap: 30px;  /* відстань між стовпцями */
+  }
+
+  .speakers-section img {
+    width: 20rem !important;  /* ширина зображень */
+    height: 12rem !important;  /* висота зображень */
+  }
+
+  .text-speakers img {
+    margin: 0;  /* зовнішній відступ */
+    padding: 0;  /* внутрішній відступ */
+  }
+
+  .text-speakers span {
+    font-size: 10px;  /* розмір шрифту */
+    font-style: normal !important;  /* зміна стилю шрифту на нормальний */
+  }
+
+  .text-speakers p {
+    font-size: 10px;  /* розмір шрифту */
+    padding: 0 !important;  /* внутрішній відступ */
+    margin: 0 !important;  /* зовнішній відступ */
+  }
+}
+
+/* Зміни стилів для блоку "footer .footer-container" на екранах шириною більше або рівно 992px */
+@media screen and (min-width: 992px) {
+  body main footer .footer-container {
+    width: 70%;  /* ширина блоку "footer .footer-container" */
+    column-gap: 30px;  /* відстань між стовпцями */
+  }
+}
+
+/* Зміни стилів для блоку "footer .footer-container" на екранах шириною більше або рівно 1200px */
+@media screen and (min-width: 1200px) {
+  body main footer .footer-container {
+    width: 56%;  /* ширина блоку "footer .footer-container" */
+    column-gap: 30px;  /* відстань між стовпцями */
+  }
+}
