@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Побажання</title>
+    <link rel="stylesheet" href="wish_page.css">
+</head>
+<body>
+
+    <form id="exhibitionForm">
+        <h2>Побажання по вибору виставки</h2>
+    
+        <!-- Мітка та поле для введення категорії виставки -->
+        <label for="category">Категорія виставки:</label>
+        <input type="text" id="category" name="category" placeholder="Мистецтво, антикваріат, транспорт, ..." required>
+    
+        <!-- Мітка та поле для введення часу від -->
+        <label for="timeFrom">Час від:</label>
+        <input type="datetime-local" id="timeFrom" name="timeFrom" required>
+    
+        <!-- Мітка та поле для введення часу до -->
+        <label for="timeTo">Час до:</label>
+        <input type="datetime-local" id="timeTo" name="timeTo" required>
+    
+        <!-- Мітка та поле для введення додаткової інформації -->
+        <label for="additionalInfo">Додаткова інформація</label>
+        <textarea id="additionalInfo" name="additionalInfo" placeholder="Будь-яка додаткова інформація..." rows="4"></textarea>
+    
+        <!-- Кнопка для підтвердження вибору виставки -->
+        <button type="button" onclick="submitForm()">Підтвердити</button>
+    </form>
+    <!-- Підключення скрипту для обробки подій на сторінці -->
+    <script src="wish_page.js"></script>
+</body>
+</html>

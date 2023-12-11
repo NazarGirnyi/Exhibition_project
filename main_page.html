@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ua-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_page.css">
+</head>
+<body>
+    <header>
+      <!-- Секція для контейнера навігації -->
+      <section class="nav-container">
+        <!-- Навігаційне меню -->
+        <nav class="navbar">
+          <!-- Блок для мобільного меню -->
+          <div class="mobile">
+            <!-- Іконка меню -->
+            <span class="menuIcon">
+              <i class="fas fa-bars icon"></i>
+            </span>
+            <!-- Іконка закриття меню -->
+            <span class="close">
+              <i class="fas fa-times"></i>
+            </span>
+          </div>
+          <!-- Логотип (пустий span, можна додати текст або зображення) -->
+          <span class="logo-header">
+          </span>
+          <!-- Контейнер для пунктів меню -->
+          <div id="navbar-container" class="navbar-container">
+            <!-- Меню для десктопної версії -->
+            <div class="desk-navbar-menu">
+              <ul class="desk-navbar-menu-list">
+                <!-- Пункт меню "Головна" -->
+                <li class="desk-navbar-menu-item">
+                  <a href="#">Головна</a>
+                </li>
+                <!-- Пункт меню "Про нас" -->
+                <li class="desk-navbar-menu-item">
+                  <a href="#">Про нас</a>
+                </li>
+                <!-- Пункт меню "Виставки" -->
+                <li class="desk-navbar-menu-item">
+                  <a href="#">Виставки</a>
+                </li>
+                <!-- Пункт меню "Побажання" з посиланням на wish_page.html -->
+                <li class="desk-navbar-menu-item">
+                  <a href="wish_page.html">Побажання</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- Тут можна додати інші елементи в заголовок, якщо потрібно -->
+
+
+      <!-- Секція банера -->
+      <section class="banner">
+        <!-- Заголовок та опис банера -->
+        <div class="title d-flex justify-content-center flex-column">
+          <h4>Вітаємо</h4>
+          <h1>ХУДОЖНЯ ВИСТАВКА - 2023</h1>
+        </div>
+        <!-- Опис виставки -->
+        <div class="descruption">
+          <p>Художні виставки представляють собою збирання арт-об’єктів у простір для тимчасової події.
+            Виставка може включати роботи одного художника, мистецькі роботи на одну тему або тему певної епохи.</p>
+        </div>
+        <!-- Інформація про тривалість виставки -->
+        <div class="prod-year">
+          <h3>
+            2023.12.09 (Субота) ~ 17(Понеділок)
+          </h3>
+        </div>
+      </section>
+    </header>
+    <!-- Основний контент сторінки -->
+    <main class="container-fluido" id="container">
+      <!-- Розділ програми виставки -->
+      <section class="program">
+        <h2 style="text-align: center;">Головна програма</h2>
+        <!-- Лінія-роздільник -->
+        <div class="partners-underline"></div>
+        <!-- Контейнер для програмних подій -->
+        <div class="program-container">
+          <!-- Перший елемент програми -->
+          <div class="program-item">
+            <div class="program-item-icon">
+              <!-- Зображення для першого елемента -->
+              <img src="https://lviv.travel/image/events/30/08/3008fd01c35ec1d18c2c595abb8bb7438459eb37_1701350214.jpg?crop=985%2C659%2C18%2C0" alt="first program">
+            </div>
+            <!-- Заголовок для першого елемента -->
+            <h3>Виставка Івана Турецького "Магія кольору"</h3>
+          </div>
+          <!-- Другий елемент програми -->
+          <div class="program-item">
+            <div class="program-item-icon">
+              <!-- Зображення для другого елемента -->
+              <img src="https://lviv.travel/image/events/a2/d4/a2d41bbf63be60957daa958c948c0598d54c3304_1701688446.jpg?crop=6686%2C4474%2C102%2C0" alt="second program">
+            </div>
+            <!-- Заголовок для другого елемента -->
+            <h3>Інсталяція Amaglamation</h3>
+          </div>
+          <!-- Третій елемент програми -->
+          <div class="program-item">
+            <div class="program-item-icon">
+              <!-- Зображення для третього елемента -->
+              <img src="https://lviv.travel/image/events/48/d3/48d3214fcf531a768157b661623122f73c51effd_1654680409.jpg?crop=2039%2C1365%2C0%2C84" alt="sixth program">
+            </div>
+            <!-- Заголовок для третього елемента -->
+            <h3>Виставка "Мистецтво Виживання"</h3>
+          </div>
+          <!-- Кнопка для перегляду більше елементів програми -->
+          <input type="button" class="program-btn" value="See more" />
+        </div>
+        <!-- Посилання на повний перелік подій -->
+        <a href="https://lviv.travel/ua/events/c-vystavky" class="program-link" style="text-align: center;"> Переглянути всю програму </a>
+      </section>
+
+      <section class="row d-flex justify-content-center">
+        <!-- Розділ з рейтингом виставок -->
+        <div class="ranking-section container-fluid py-5">
+          <!-- Заголовок розділу -->
+          <h2 class="container text-cener pt-5 d-flex justify-content-center">Виставки у Львові</h2>
+          <!-- Контейнер для навігації розділу -->
+          <div class="container d-flex my-3 justify-content-center cont-nav">
+            <!-- Блок з декількома виставками -->
+            <div class="row d-flex justify-content-center">
+              <!-- Перший блок виставки -->
+              <div class="speakers-section col-md-6 d-flex justify-content-center" data-id="2">
+                <div col-md-6="">
+                  <!-- Зображення для першого блоку виставки -->
+                  <img class="img-rounded" src="https://lviv.travel/image/events/a2/d4/a2d41bbf63be60957daa958c948c0598d54c3304_1701688446.jpg?crop=6686%2C4474%2C102%2C0" alt="profile picture" height="100" width="200">
+                </div>
+                <div class="text-speakers col-md-6 m-2">
+                  <!-- Заголовок та опис першого блоку виставки -->
+                  <h2 class="pt-5" style="color:black; font-weight:900">Інсталяція Amaglamation</h2>
+                  <span class="pt-4" style="font-style: italic; color: #EC5242;"></span>
+                  <h3 class="pt-4">9 грудня о 16:00 у виставковому просторі Дому Звуку відбудеться аудіо-перформанс, під час якого Роман Фещак презентує аудіоматеріал, створений на основі звуків, видобутих із принесених відвідувачами предметів.</h3>
+                  <h4 class="c-list-item__address c-address c-address--dark">
+                    <!-- Адреса для першого блоку виставки -->
+                    <span class="c-icon c-icon--marker"> </span>
+                    виставковий простір Дому Звуку (Князя Романа, 6)
+                  </h4>
+                </div>
+              </div>
+              <!-- Другий блок виставки -->
+              <div class="speakers-section col-md-6 d-flex justify-content-center" data-id="3">
+                <div col-md-6="">
+                  <!-- Зображення для другого блоку виставки -->
+                  <img class="img-rounded" src="https://lviv.travel/image/events/30/08/3008fd01c35ec1d18c2c595abb8bb7438459eb37_1701350214.jpg?crop=985%2C659%2C18%2C0" alt="profile picture" height="100" width="100">
+                </div>
+                <div class="text-speakers col-md-6 m-2">
+                  <!-- Заголовок та опис другого блоку виставки -->
+                  <h2 class="pt-5" style="color:black; font-weight:900">Виставка Івана Турецького "Магія кольору"</h2>
+                  <h3 class="pt-4">3 грудня у стінах Львівського Дому Мистецтв відбудеться відкриття персональної виставки Івана Турецького "Магія кольору". Автор дарує можливість пройтися лабіринтами уяви та з головою зануритися в справжній магічний світ кольору, де ви можете відкрити для себе незбагненні грані фантастичного.</h3>
+                </div>
+              </div>
+              <!-- Третій блок виставки -->
+              <div class="speakers-section col-md-6 d-flex justify-content-center" data-id="4">
+                <div col-md-6="">
+                  <!-- Зображення для третього блоку виставки -->
+                  <img class="img-rounded" src="https://lviv.travel/image/events/48/d3/48d3214fcf531a768157b661623122f73c51effd_1654680409.jpg?crop=2039%2C1365%2C0%2C84" alt="profile picture" height="100" width="100">
+                </div>
+                <div class="text-speakers col-md-6 m-2">
+                  <!-- Заголовок та опис третього блоку виставки -->
+                  <h2 class="pt-5" style="color:black; font-weight:900">Виставка "Мистецтво Виживання"</h2>
+                  <h3 class="pt-4">Запрошуємо до Державного природознавчого музею (Театральна, 18) на виставку «Мистецтво Виживання».
+                    Чому риба не тоне у воді? Чому кажуть: сліпий, як кріт? Чому дикі поросята смугасті, а дорослі кабани – ні? Відповіді на ці та інші питання Ви довідаєтеся на виставці, яка присвячена пристосуванню тварин і рослин до різних умов середовища.</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

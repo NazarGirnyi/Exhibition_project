@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" type="images/x-icon" href="https://i.pinimg.com/1200x/7b/8c/d8/7b8cd8b068e4b9f80b4bcf0928d7d499.jpg" />     
+    <link rel="stylesheet" href="main_login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Заголовок форми -->
+        <h2>Login</h2>
+        <!-- Форма для входу -->
+        <form id="loginForm" onsubmit="validateLogin(event)">
+            <!-- Поле для введення логіну -->
+            <div class="input-group">
+                <label for="username">Логін</label>
+                <input type="text" id="username" name="username" placeholder="Введіть свій логін" required>
+            </div>
+            <!-- Поле для введення паролю -->
+            <div class="input-group password-group">
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="password" placeholder="Введіть свій пароль" required>
+                <!-- Показ/приховання паролю -->
+                <p></p>
+                <button class="button_showpassword" type="button" id="showPasswordBtn" onclick="togglePasswordVisibility()">
+                    <label>Показати пароль</label>
+                    <!-- Іконки для показу/приховання паролю -->
+                    <span id="showPasswordIcon" class="show-icon"></span>
+                    <span id="hidePasswordIcon" class="hide-icon"></span>
+                </button>
+            </div>
+            <!-- Кнопка для входу -->
+            <button class="button_login" type="submit">Вхід</button>
+        </form>
+    </div>
+
+<script src="main_login.js"></script>
+
+</body>
+</html>
