@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition Project Wishes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            text-align: left;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form id="exhibitionForm">
+    <h2>Exhibition Project Wishes</h2>
+
+    <label for="category">Category of Art:</label>
+    <input type="text" id="category" name="category" placeholder="e.g., Painting" required>
+
+    <label for="timeFrom">Time From:</label>
+    <input type="datetime-local" id="timeFrom" name="timeFrom" required>
+
+    <label for="timeTo">Time To Due:</label>
+    <input type="datetime-local" id="timeTo" name="timeTo" required>
+
+    <label for="additionalInfo">Additional Information:</label>
+    <textarea id="additionalInfo" name="additionalInfo" placeholder="Any additional information..." rows="4"></textarea>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<script>
+    function submitForm() {
+        // Retrieve user inputs
+        var category = document.getElementById('category').value;
+        var timeFrom = document.getElementById('timeFrom').value;
+        var timeTo = document.getElementById('timeTo').value;
+        var additionalInfo = document.getElementById('additionalInfo').value;
+
+        // Do something with the user inputs (e.g., send to a server, display a message)
+        alert('Wish submitted!\nCategory: ' + category + '\nTime From: ' + timeFrom + '\nTime To Due: ' + timeTo + '\nAdditional Info: ' + additionalInfo);
+    }
+</script>
+
+</body>
+</html>
