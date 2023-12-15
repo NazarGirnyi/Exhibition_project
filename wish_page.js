@@ -1,11 +1,30 @@
-// Функція, яка викликається при натисканні на кнопку "Підтвердити" у формі вибору виставки
 function submitForm() {
-    // Отримання значень полів форми за їхніми ідентифікаторами
-    var category = document.getElementById('category').value;
-    var timeFrom = document.getElementById('timeFrom').value;
-    var timeTo = document.getElementById('timeTo').value;
-    var additionalInfo = document.getElementById('additionalInfo').value;
+    var category = document.getElementById("category").value.toLowerCase();
+    var timeFrom = document.getElementById("timeFrom").value;
+    var timeTo = document.getElementById("timeTo").value;
+    var additionalInfo = document.getElementById("additionalInfo").value;
 
-    // Виведення повідомлення зі зібраною інформацією про вибір виставки
-    alert('Побажання надіслано!\nКатегорія: ' + category + '\nЧас від: ' + timeFrom + '\nЧас до: ' + timeTo + '\nДодаткова інформація: ' + additionalInfo);
+    // Визначення умов для перенаправлення
+    var redirectToPage;
+
+    if (category !== '') {
+        switch (category) {
+            case 'антикваріат':
+                redirectToPage = 'antiques_page.html';
+                break;
+            case 'живопис':
+                redirectToPage = 'paintings_page.html';
+                break;
+            // Інші категорії за потреби
+            default:
+                redirectToPage = 'default_page.html';
+                break;
+        }
+    }     if (new Date(timeFrom) >= new Date(timeTo)) {
+        alert("Час від повинен бути менше за час до. Будь ласка, виправте це.");
+        return;
+    }
+
+    // Перенаправлення на визначену сторінку
+    window.location.href = redirectToPage;
 }
